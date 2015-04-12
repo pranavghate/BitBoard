@@ -88,7 +88,7 @@ a:hover { text-decoration: none; }
 }
 
 .register form input {
-   
+    width: 95%;
     height: 30px;
     background: #fcfcfc;
     border: 1px solid #ddd;
@@ -101,6 +101,15 @@ a:hover { text-decoration: none; }
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     color: #888;
     font-size: 16px;
+}
+
+.register form input:focus {
+    width: 95%;
+    height: 30px;
+    border: 1px solid #ccc;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .register form label {
