@@ -25,7 +25,7 @@ public class RegisterUser implements RegisterUserRemote {
             Class.forName("com.mysql.jdbc.Driver");
            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bitboard?zeroDateTimeBehavior=convertToNull", "root", "");
             //String sql="inser11t into user values('"+user+"','"+pass+"','"+email+"','"+fname+"','"+lname+"','"+dept+"','"+phno+"','"+addr+"','"+bdate+"')";
-           String test="insert into user values('"+user+"','"+pass+"','"+email+"','"+fname+"','"+lname+"','"+comp+"','"+dept+"','"+phno+"')";
+           String test="insert into user values('"+user+"','"+pass+"','"+email+"','"+fname+"','"+lname+"','"+comp+"','"+dept+"','"+phno+"',0)";
            Statement stmt=con.createStatement();
            stmt.executeUpdate(test);
            stmt.close();
