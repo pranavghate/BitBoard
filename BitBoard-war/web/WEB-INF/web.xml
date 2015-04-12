@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Loginserv</servlet-name>
+        <servlet-class>Loginserv.Loginserv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>postserv</servlet-name>
+        <servlet-class>postserv.postserv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>regserv</servlet-name>
+        <servlet-class>regserv.regserv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>disPost</servlet-name>
+        <servlet-class>disPost.disPost</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Loginserv</servlet-name>
+        <url-pattern>/Loginserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>postserv</servlet-name>
+        <url-pattern>/postserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>regserv</servlet-name>
+        <url-pattern>/regserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>disPost</servlet-name>
+        <url-pattern>/disPost</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
