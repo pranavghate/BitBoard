@@ -84,6 +84,8 @@ public class disPost extends HttpServlet {
       out.write("            <div class=\"row\">\r\n");
       out.write("            \t<div class=\"register span12\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px;\">\r\n");
       out.write("                <h2 class=\"red\" align=\"center\">"+test+"</h2>\r\n");
+      out.write("<h3 align=\"center\"><a href=\"http://localhost:57089/default.aspx\">Add a post.</a></h3>");
+      
       out.write("                </div>\r\n");
       out.write("            </div>\r\n");
       out.write("            <br>\r\n");
@@ -91,7 +93,7 @@ public class disPost extends HttpServlet {
       {
           out.write("            <div class=\"row\">\r\n");
       out.write("            \t<div class=\"register span12\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px;\">\r\n");
-      out.write("                <h2>There have been no posts posted on this board.</div>\r\n");
+      out.write("                <h2 align=\"center\">There have been no posts posted on this board.</div>\r\n");
       out.write("            </div>\r\n");
       
       }

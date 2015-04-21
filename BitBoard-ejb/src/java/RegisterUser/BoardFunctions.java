@@ -8,6 +8,7 @@ package RegisterUser;
 import java.sql.*;
 import javax.ejb.Stateless;
 
+
 /**
  *
  * @author Pranav
@@ -23,7 +24,9 @@ public class BoardFunctions implements BoardFunctionsRemote {
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bitboard?zeroDateTimeBehavior=convertToNull", "root", "");
             Statement stmt=con.createStatement();
             String query="Insert into board values("+bid+",'"+leaderid+"','"+bname+"','"+company+"')";
+            String query1="Insert into subscribes_to('"+leaderid+"'+101+0)";
             stmt.executeUpdate(query);
+            stmt.executeUpdate(query1);
             stmt.close();
             con.close();
         

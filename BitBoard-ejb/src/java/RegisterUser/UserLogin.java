@@ -119,6 +119,34 @@ public class UserLogin implements UserLoginRemote {
         return names;
         
     }
+
+    @Override
+    public int checkAdmin(String user) {
+        
+        int rowCount=0;
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bitboard?zeroDateTimeBehavior=convertToNull", "root", "");
+            Statement stmt=con.createStatement();
+            String sql="select isadmin from user where userid='"+user+"'";
+            ResultSet rs=stmt.executeQuery(sql);
+            rs.next();
+            rowCount=rs.getInt(1);
+        }
+        catch(Exception e)
+                {
+                    
+                }
+        if(rowCount==0)
+        {
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+    }
     
     
 }

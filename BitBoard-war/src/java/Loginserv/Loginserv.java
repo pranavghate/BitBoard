@@ -86,6 +86,11 @@ public class Loginserv extends HttpServlet {
             out.write("                        <a class=\"contact\" href=\"developers.html\" rel=\"tooltip\" data-placement=\"bottom\" data-original-title=\"Developers\"></a>\r\n");
             out.write("                         <a class=\"about\" href=\"aboutus.html\" rel=\"tooltip\" data-placement=\"bottom\" data-original-title=\"About Us\"></a>\r\n");
             out.write("                          <a class=\"tut\" href=\"tutorial.html\" rel=\"tooltip\" data-placement=\"bottom\" data-original-title=\"Tutorial\"></a>\r\n");
+            out.write("                          <a class=\"bug\" href=\"bugreport.html\" rel=\"tooltip\" data-placement=\"bottom\" data-original-title=\"Bug Reporting\"></a>");
+            if(userLogin.checkAdmin(username)==1)
+            {
+                 out.write("                          <a class=\"adtools\" href=\"admintools.html\" rel=\"tooltip\" data-placement=\"bottom\" data-original-title=\"Admin Tools\"></a>");
+            }
             out.write("                    </div>\r\n");
             out.write("                </div>\r\n");
             out.write("            </div>\r\n");
@@ -101,16 +106,16 @@ public class Loginserv extends HttpServlet {
             
             if(userLogin.checkBoard(username)==0)
             {
-                out.write("             <div class=\"register span2\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px; padding-bottom:10px;\"></div>\r\n");
+                out.write("             <div class=\"register span2\"></div>\r\n");
                 out.write("            <div class=\"register span8\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px;  padding-bottom:10px;\"><h2 class=\"red\" align=\"center\">Please Select a Bulletin Board</h2>\r\n");
-                out.write("            <h4 align=\"center\">or <a href=\"addboard.html\">add</a> or <a href=\"subscribe.html\">subscribe</a> to a new one.</h4><h3>It seems you havent subscribed to any bulletin boards yet.</h3></div>\r\n");     
+                out.write("            <h4 align=\"center\">or <a href=\"addboard.html\">add</a> or <a href=\"subscribe.html\">subscribe</a> to a new one.</h4><h3 align=\"center\">It seems you havent subscribed to any bulletin boards yet.</h3></div>\r\n");     
             }
             else
             {
                 //list all subscribed boards here
                 String[] ret;
                 ret=userLogin.getTitles(username);
-                out.write("             <div class=\"register span2\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px; padding-bottom:10px;\"></div>\r\n");
+                out.write("             <div class=\"span2\"></div>\r\n");
                 out.write("            <div class=\"register span8\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px;  padding-bottom:10px;\"><h2 class=\"red\" align=\"center\">Please Select a Bulletin Board</h2>\r\n");
                 out.write("            <h4 align=\"center\">or <a href=\"addboard.html\">add</a> or <a href=\"subscribe.html\">subscribe</a> to a new one.</h4>");
                 for(int i=0;i<5;i++)
@@ -120,12 +125,12 @@ public class Loginserv extends HttpServlet {
                         break;
                     }
                     else
-                        out.write("<a href=\"disPost?name="+ret[i]+"\"><h2 align=\"center\"> "+ret[i]+"</h2></a>");
+                        out.write("<a href=\"disPost?name="+ret[i]+"\"><h2 align=\"center\" style=\"color:#ffffff;margin:10px 50px 10px 50px;background-color:#DB4437;border-radius:5px; box-shadow: 0px 0px 2px 1px #888888; \"> "+ret[i]+"</h2></a>");
                 }
                 out.write("</div>\r\n");
                 
             }
-            out.write("            <div class=\"register span2\" style=\"background-color:#F2F2F2; border-radius:5px; box-shadow: 0px 0px 2px 1px #888888;text-shadow: 0px 0px 1px;  padding-top:10px;\"></div>\r\n");
+            out.write("            <div class=\"span2\"></div>\r\n");
             out.write("            </div>\r\n");
             out.write("               \r\n");
             out.write("        </div>\r\n");

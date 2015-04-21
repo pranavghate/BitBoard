@@ -25,7 +25,7 @@ public class BugReport implements BugReportRemote {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bitboard?zeroDateTimeBehavior=convertToNull", "root", "");
             Statement stmt=con.createStatement();
-            String sql="Insert into bug_reports values("+bugid+"+'"+bugname+"'+'"+bugdesc+"')";
+            String sql="Insert into bug_reports values("+bugid+",'"+bugname+"','"+bugdesc+"')";
             stmt.executeUpdate(sql);
             con.close();
             stmt.close();

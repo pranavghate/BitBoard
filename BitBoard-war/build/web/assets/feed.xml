@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <generator>RSS Builder by B!Soft</generator>
+    <title>BitBoard</title>
+    <link>www.bitboard.com</link>
+    <description>BitBoard is a website where a group of people can share ideas and opinions in a productive manner.</description>
+    <language>en-us</language>
+    <managingEditor>pranav.ghate@ves.ac.in</managingEditor>
+    <webMaster>pranav.ghate@ves.ac.in</webMaster>
+    <copyright>Creative Commons</copyright>
+    <item>
+      <title>Updated Contact List</title>
+      <pubDate>Tue, 31 Mar 2015 05:09:21 +0500</pubDate>
+      <link>www.bitboard.com/contactus.html</link>
+      <category>Meta</category>
+      <description><![CDATA[We have updated the contact credentials on our website. Take a look at it if you want to drop us any suggestions or emails !]]></description>
+    </item>
+    <item>
+      <title>Meet The Developers</title>
+      <pubDate>Tue, 31 Mar 2015 05:06:04 +0500</pubDate>
+      <link>www.bitboard.com/devs.html</link>
+      <category>Meta</category>
+      <description><![CDATA[dSa]]></description>
+    </item>
+    <item>
+      <title>A New Beginning</title>
+      <pubDate>Tue, 31 Mar 2015 05:05:12 +0500</pubDate>
+      <link>www.bitboard.com</link>
+      <category>Meta</category>
+      <description><![CDATA[We are proud to annoucne the influx of 1000 new users since the launch. We really appreciate your following and we are very proud of it.]]></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <pubDate>Tue, 31 Mar 2015 05:03:23 +0500</pubDate>
+      <link>www.bitboard.com/tutorial.html</link>
+      <category>Meta</category>
+      <description><![CDATA[We are proud to announce that we have made a simple tutorial in order for the layman to understand our website]]></description>
+    </item>
+    <item>
+      <title>Welcome to BitBoard</title>
+      <pubDate>Tue, 31 Mar 2015 05:02:16 +0500</pubDate>
+      <link>www.bitboard.com</link>
+      <guid isPermaLink="true">www.bitboard.com</guid>
+      <category>Meta</category>
+      <description><![CDATA[We are proud to announce the launch of our website. BitBoard is a website where a group of people can share ideas and opinions in a productive manner. We welcome you here.]]></description>
+    </item>
+  </channel>
+</rss>

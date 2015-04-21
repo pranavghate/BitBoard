@@ -47,6 +47,7 @@ a:hover { text-decoration: none; }
 .links a.about { background: url(../img/about.png) center center no-repeat; }
 .links a.tut { background: url(../img/tutorial.png) center center no-repeat; }
 .links a.bug { background: url(../img/bug13.png) center center no-repeat; }
+.links a.adtools { background: url(../img/admin.png) center center no-repeat; }
 
 
 .register-container {
